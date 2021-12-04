@@ -10,9 +10,13 @@
   list-style: none;
 }
 
+.tawk-text-bold {
+  display: none !important;
+}
+
 .span {
   font-weight: bold;
-  color: #1f2a82;
+  color: #c05693;
   margin: 0 auto;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -22,7 +26,7 @@
   margin-bottom: 15px;
   padding: 4px 7px 4px 8px;
   border-radius: 4px;
-  background: #dbe2fc;
+  background: #ffd5ed;
   font-size: 11px;
   line-height: 16px;
   font-weight: 500;
@@ -75,12 +79,19 @@ html body #header .container .row .header-left {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  height: 100%;
 }
 
 html body #header .container .row .header-left .header-link {
   color: #fff;
   font-size: 20px;
   margin-right: 60px;
+  height: 100%;
+}
+
+html body #header .container .row .header-left .header-link img {
+  padding: 10px;
+  height: 100%;
 }
 
 html body #header .container .row .header-left nav .nav-list {
@@ -162,7 +173,7 @@ html body main .mobil-menu .mobil-container nav ul li a {
 }
 
 html body main .bg-elements {
-  background-image: linear-gradient(357deg, #0f1340 52%, #1f2a82);
+  background-image: linear-gradient(357deg, #de5472 52%, #c05693);
   position: absolute;
   top: 0;
   left: 0;
@@ -264,8 +275,8 @@ html body main #reklam .container .title {
   margin-bottom: 15px;
   padding: 4px 7px 4px 8px;
   border-radius: 4px;
-  background-color: #dbe2fc;
-  color: #1f2a82;
+  background-color: #ffd5ed;
+  color: #c05693;
   font-size: 11px;
   line-height: 16px;
   font-weight: 500;
@@ -399,7 +410,7 @@ html body main #acardion .row .right-item .right-flex .icon {
   left: 20px;
   font-size: 35px;
   border-radius: 50%;
-  background: #1f2a82;
+  background: #c05693;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -510,7 +521,7 @@ html body main #card {
   position: relative;
   margin-top: 100px;
   background-color: #e6e8f0;
-  background-image: linear-gradient(357deg, #0f1340 52%, #1f2a82);
+  background-image: linear-gradient(357deg, #de5472 52%, #c05693);
   z-index: -1;
   padding-top: 50px;
   padding-bottom: 100px;
@@ -721,7 +732,7 @@ html body main #last {
   margin-top: 100px;
   padding: 120px 0;
   width: 100%;
-  background-image: linear-gradient(357deg, #0f1340 52%, #1f2a82);
+  background-image: linear-gradient(357deg, #de5472 52%, #c05693);
 }
 
 html body main #last .container .row {
@@ -778,6 +789,10 @@ html body main #last .img-abs-last img {
 
 html body #footer {
   margin-top: 80px;
+}
+
+html body #footer .footer-logo img {
+  height: 25px;
 }
 
 html body #footer .container .row1 {

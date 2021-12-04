@@ -13,8 +13,8 @@
 // Color 
 $white:#fff;
 $black:#000;
-$spanColor:#1f2a82;
-$spanBack:#dbe2fc;
+$spanColor:#c05693;
+$spanBack:#ffd5ed   ;
 $h2Color:#30364d;
 $linkCOlor:#182553;
 $appBack:#e6e8f0;
@@ -22,12 +22,14 @@ $rightContent:#798099;
 $h2two:#0f1340;
 $backColor:#e6e8f0;
 $darkOrange:darkorange;
-$linearback:linear-gradient(357deg, #0f1340 52%, #1f2a82);
+$linearback:linear-gradient(357deg, #de5472 52%, $spanColor);
 $bLeft:rgba(255, 255, 255, .4);
 $hoverAcardion:rgba(128, 0, 128, 0);
 $emerBtn:rgba(15, 19, 64, .05);
 $boxShadow:rgba(0, 0, 0, 0.1);
-
+.tawk-text-bold{
+    display: none!important;
+}
 .span {
     font-weight: bold;
     color: $spanColor;
@@ -80,11 +82,17 @@ html {
                     .header-left {
                         display: flex;
                         align-items: flex-end;
+                        height:100%;
 
                         .header-link {
                             color: $white;
                             font-size: 20px;
                             margin-right: 60px;
+                            height:100%;
+                            img{
+                                padding:10px;
+                                height:100%;
+                            }
                         }
 
                         nav {
@@ -713,7 +721,11 @@ html {
 
         #footer {
             margin-top: 80px;
-
+            .footer-logo{
+                img{
+                    height:25px;
+                }
+            }
             .container {
                 .row1 {
                     display: flex;
