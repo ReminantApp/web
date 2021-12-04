@@ -1,6 +1,5 @@
 const acardion = document.querySelectorAll('.right-flex');
 const acardionLeft = document.querySelectorAll('.img');
-const ac = document.querySelector('.ac')[0];
 
 acardion.forEach((item) => {
     item.addEventListener("click", () => {

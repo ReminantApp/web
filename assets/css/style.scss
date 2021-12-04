@@ -27,6 +27,10 @@ $bLeft:rgba(255, 255, 255, .4);
 $hoverAcardion:rgba(128, 0, 128, 0);
 $emerBtn:rgba(15, 19, 64, .05);
 $boxShadow:rgba(0, 0, 0, 0.1);
+$footerTitle:#000;
+$footerList:rgba(0,0,0,.5);
+$footerItem:rgba(0,0,0,.5);
+
 .tawk-text-bold{
     display: none!important;
 }
@@ -81,7 +85,7 @@ html {
 
                     .header-left {
                         display: flex;
-                        align-items: flex-end;
+                        align-items: center;
                         height:100%;
 
                         .header-link {
@@ -541,34 +545,18 @@ html {
                 }
 
                 .img-top-abs {
-                    img {
+                    svg {
                         width: 100%;
-                        background-size: cover;
                         position: absolute;
-                        top: -59px;
-                        height: 50px;
-                        z-index: 100000;
-                    }
-                }
-
-                .img-top-abs {
-                    position: absolute;
-                    top: 59px;
-                    width: 100%;
-
-                    img {
+                        top: 0;
                         height: 4vw;
                     }
                 }
 
                 .img-bottom-abs {
                     position: absolute;
-                    bottom: -10px;
+                    bottom: -4px;
                     width: 100%;
-
-                    img {
-                        width: 100%;
-                    }
                 }
             }
 
@@ -736,6 +724,16 @@ html {
                         a {
                             color: $black;
                             font-size: 30px;
+                            display: flex;
+                            align-items: center;
+                            img{
+                                margin-right: 10px;
+                                width: 35px;
+                                height: 35px;
+                            }
+                            span{
+                                color:$black;
+                            }
                         }
                     }
 
@@ -750,12 +748,12 @@ html {
 
                 .row2 {
                     margin-top: 50px;
-                    padding-right: 100px;
+                    padding-right: 200px;
                     display: flex;
                     justify-content: space-between;
 
                     .footer-item {
-                        color: $black;
+                        color: $footerItem;
 
                         p {
                             margin-bottom: 20px;
@@ -775,7 +773,7 @@ html {
 
                     .footer-list {
                         .footer-title {
-                            color: $black;
+                            color: $footerTitle;
                             font-size: 20px;
                             margin-bottom: 25px;
                         }
@@ -786,7 +784,7 @@ html {
 
                                 a {
                                     font-weight: bold;
-                                    color: $black;
+                                    color: $footerList;
                                 }
                             }
                         }
@@ -909,7 +907,7 @@ html {
                         flex-direction: column !important;
 
                         .footer-list {
-                            margin-top: 25px;
+                            margin-top: 35px;
                         }
                     }
                 }
@@ -918,6 +916,15 @@ html {
 
         @media only screen and (max-width:500px) {
             main {
+                #app{
+                    .container{
+                    .row{
+                        .app-top-img{
+                            margin-top: 60px;
+                        }
+                    }
+                    }
+                }
                 .bg-elements {
                     min-height: 780px;
                 }

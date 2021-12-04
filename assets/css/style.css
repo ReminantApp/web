@@ -76,9 +76,9 @@ html body #header .container .row .header-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
 }
 
@@ -583,32 +583,16 @@ html body main #card .container .row .card-grid .card-flex p {
   opacity: 0.7;
 }
 
-html body main #card .img-top-abs img {
+html body main #card .img-top-abs svg {
   width: 100%;
-  background-size: cover;
   position: absolute;
-  top: -59px;
-  height: 50px;
-  z-index: 100000;
-}
-
-html body main #card .img-top-abs {
-  position: absolute;
-  top: 59px;
-  width: 100%;
-}
-
-html body main #card .img-top-abs img {
+  top: 0;
   height: 4vw;
 }
 
 html body main #card .img-bottom-abs {
   position: absolute;
-  bottom: -10px;
-  width: 100%;
-}
-
-html body main #card .img-bottom-abs img {
+  bottom: -4px;
   width: 100%;
 }
 
@@ -810,6 +794,22 @@ html body #footer .container .row1 {
 html body #footer .container .row1 .left a {
   color: #000;
   font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body #footer .container .row1 .left a img {
+  margin-right: 10px;
+  width: 35px;
+  height: 35px;
+}
+
+html body #footer .container .row1 .left a span {
+  color: #000;
 }
 
 html body #footer .container .row1 .right .btn-flex a {
@@ -818,7 +818,7 @@ html body #footer .container .row1 .right .btn-flex a {
 
 html body #footer .container .row2 {
   margin-top: 50px;
-  padding-right: 100px;
+  padding-right: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -828,7 +828,7 @@ html body #footer .container .row2 {
 }
 
 html body #footer .container .row2 .footer-item {
-  color: #000;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 html body #footer .container .row2 .footer-item p {
@@ -856,7 +856,7 @@ html body #footer .container .row2 .footer-list ul li {
 
 html body #footer .container .row2 .footer-list ul li a {
   font-weight: bold;
-  color: #000;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 html body #footer .footer-bottom {
@@ -950,11 +950,14 @@ html body #footer .footer-bottom span {
             flex-direction: column !important;
   }
   html body #footer .container .row2 .footer-list {
-    margin-top: 25px;
+    margin-top: 35px;
   }
 }
 
 @media only screen and (max-width: 500px) {
+  html body main #app .container .row .app-top-img {
+    margin-top: 60px;
+  }
   html body main .bg-elements {
     min-height: 780px;
   }
