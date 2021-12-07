@@ -18,6 +18,15 @@
   background: #c05693 !important;
 }
 
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .span {
   font-weight: bold;
   color: #c05693;

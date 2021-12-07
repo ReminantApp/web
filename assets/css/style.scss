@@ -44,6 +44,11 @@ $swiperBack:#c05693;
 background:$swiperBack !important;
 }
 
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+}
+
 .span {
     font-weight: bold;
     color: $spanColor;
