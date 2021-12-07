@@ -14,6 +14,10 @@
   display: none !important;
 }
 
+.swiper-pagination-bullet-active {
+  background: #c05693 !important;
+}
+
 .span {
   font-weight: bold;
   color: #c05693;
@@ -127,6 +131,227 @@ html body #header .container .row .header-right .download {
   padding: 5px 30px;
   background: #fff;
   font-size: 14px;
+}
+
+html body main .background-blue {
+  background: linear-gradient(357deg, #de5472 52%, #c05693);
+  width: 100%;
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-transform: translateY(-90px);
+          transform: translateY(-90px);
+  position: relative;
+  z-index: -1;
+}
+
+html body main .background-blue .row {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html body main .background-blue .row .hk-title {
+  color: #fff;
+  font-size: 40px;
+}
+
+html body main .background-blue .row .hk-content {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #fff;
+}
+
+html body main .background-blue .hk-abs-svg {
+  width: 100%;
+  position: absolute;
+  bottom: -4px;
+}
+
+html body main #about .about-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+html body main #about .about-container .about-center {
+  text-align: center;
+}
+
+html body main #about .about-container h3 {
+  font-size: 30px;
+  color: #182553;
+}
+
+html body main #about .about-container .row {
+  margin-top: 60px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+html body main #about .about-container .row .about-card {
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body main #about .about-container .row .about-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+html body main #about .about-container .row .about-card .about-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+html body main #about .about-container .row .about-card .about-name .Name {
+  color: #000;
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+html body main #about .about-container .row .about-card .about-name .Name-alt {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  font-size: 17px;
+}
+
+html body main #about-alt {
+  margin-top: 100px;
+}
+
+html body main #about-alt .container h3 {
+  text-align: center;
+  font-size: 30px;
+  color: #182553;
+  margin-bottom: 50px;
+}
+
+html body main #about-alt .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+html body main #about-alt .container .row .b-left {
+  width: 40%;
+  margin-right: 90px;
+}
+
+html body main #about-alt .container .row .b-left img {
+  height: 100%;
+  border-radius: 10px;
+  width: 100%;
+}
+
+html body main #about-alt .container .row .b-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html body main #about-alt .container .row .b-right .right-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+html body main #about-alt .container .row .b-right .right-flex img {
+  max-width: 60px;
+  margin-right: 20px;
+}
+
+html body main #about-alt .container .row .b-right .right-flex span {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+  display: block;
+  color: #182553;
+}
+
+html body main #about-alt .container .row .b-right .right-flex p {
+  width: 90%;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+html body main #reklam2 {
+  margin-top: 150px;
+}
+
+html body main #reklam2 .container h3 {
+  text-align: center;
+  font-size: 30px;
+  color: #182553;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+html body main #reklam2 .container .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+html body main #reklam2 .container .row .reklam-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 35px;
+}
+
+html body main #reklam2 .container .row .reklam-item img {
+  height: 100%;
+  width: 230px;
 }
 
 html body main .mobil-menu .mobil-container nav ul {
@@ -771,6 +996,11 @@ html body main #last .img-abs-last img {
   width: 100%;
 }
 
+html body .footer {
+  padding-top: 70px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 html body #footer {
   margin-top: 80px;
 }
@@ -874,6 +1104,14 @@ html body #footer .footer-bottom span {
   html body .open-btn {
     display: block;
   }
+  html body main #reklam2 .container .row {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  html body main #about .about-container .row {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
   html body main .bg-elements {
     min-height: 880px;
   }
@@ -954,7 +1192,55 @@ html body #footer .footer-bottom span {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  html body main #about-alt {
+    margin-top: 20px;
+  }
+  html body main #about-alt .container .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  html body main #about-alt .container .row .b-left {
+    margin: 0;
+    width: 95%;
+  }
+  html body main #about-alt .container .row .b-left img {
+    width: 100%;
+  }
+  html body main #about-alt .container .row .b-right {
+    margin-top: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 90%;
+  }
+  html body main #about-alt .container .row .b-right .right-flex p {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 500px) {
+  html body main .background-blue {
+    height: 400px;
+  }
+  html body main .background-blue .hk-abs-svg {
+    bottom: -5px;
+  }
+  html body main #reklam2 {
+    margin-top: 0;
+  }
+  html body main #about {
+    margin-top: -80px;
+  }
+  html body main #about .about-container .row {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
   html body main #app .container .row .app-top-img {
     margin-top: 60px;
   }
