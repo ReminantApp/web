@@ -114,3 +114,12 @@ const swiper = new Swiper(".mySwiper", {
     },
   }
 });
+
+
+const navLink = document.querySelectorAll('.nav-link');
+
+function deleteNavLink(){
+  mobil_list.classList.remove("active");
+}
+
+navLink.forEach((n) => n.addEventListener("click",  deleteNavLink));
