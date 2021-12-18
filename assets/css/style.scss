@@ -41,6 +41,12 @@ $cardBack:#f8a9d6;
     display: none !important;
 }
 
+.iconCard{
+    width: 55px;
+    margin-right: 15px;
+    height: 55px;
+}
+
 .swiper-pagination-bullet-active {
     background: $swiperBack !important;
 }
@@ -79,12 +85,12 @@ $cardBack:#f8a9d6;
     font-size: 30px;
     color: $linkCOlor;
 }
-
-.open-btn {
-    font-size: 26px;
-    color: $white;
-    margin-left: 10px;
+.open-btn{
     display: none;
+}
+
+.open-btn svg {
+    margin-left: 10px;
 }
 
 .top-b {
@@ -883,8 +889,8 @@ html {
                                 padding: 15px 40px;
 
                                 .icoN {
-                                    width: 50px;
-                                    height: 50px;
+                                    width: 40px;
+                                    height: 40px;
                                     border-radius: 50%;
                                     display: flex;
                                     align-items: center;
@@ -1377,12 +1383,13 @@ html {
                         }
 
                         .btn-flex {
-                            i {
+                            svg {
                                 border: 1px solid $black;
                                 font-size: 20px;
                                 padding: 5px;
                                 margin-right: 5px;
                                 cursor: pointer;
+                                border-radius: 5px;
                             }
                         }
                     }
