@@ -1,21 +1,50 @@
+window.state={
+  downloadLinks:{
+    android:"./android",
+    ios:"./ios"
+  }
+}
+
+window.__proto__.getOS = function () {
+  var userAgent = window.navigator.userAgent,
+    platform = window.navigator.platform,
+    macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+    windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+    iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+    os = null;
+
+  if (macosPlatforms.indexOf(platform) !== -1) {
+    os = 'mac_s';
+  } else if (iosPlatforms.indexOf(platform) !== -1) {
+    os = 'ios';
+  } else if (windowsPlatforms.indexOf(platform) !== -1) {
+    os = 'windows';
+  } else if (/Android/.test(userAgent)) {
+    os = 'android';
+  } else if (!os && /Linux/.test(platform)) {
+    os = 'linux';
+  }
+
+  return os;
+}
 const acardion = document.querySelectorAll('.right-flex');
 const acardionLeft = document.querySelectorAll('.img');
 
 acardion.forEach((item) => {
-    item.addEventListener("click", () => {
-      document.querySelector(".right-flex.active").classList.remove("active");
-      item.classList.add("active");
-    });
+  item.addEventListener("click", () => {
+    document.querySelector(".right-flex.active").classList.remove("active");
+    item.classList.add("active");
   });
-
-  const open_bar = document.querySelector('.open-btn');
-  const mobil_list = document.querySelector('.listMobil');
-  const Body = document.querySelector('#body');
-  open_bar.addEventListener('click', () => {
-    mobil_list.classList.toggle('active');
-    Body.classList.toggle('active');
 });
-  
+
+const open_bar = document.querySelector('.open-btn');
+const mobil_list = document.querySelector('.listMobil');
+const Body = document.querySelector('#body');
+open_bar?.addEventListener('click', () => {
+  mobil_list.classList.toggle('active');
+  Body.classList.toggle('active');
+});
+
 
 window.sr = new ScrollReveal()
 ScrollReveal({
@@ -68,7 +97,7 @@ sr.reveal('.emer-left', {
 })
 
 sr.reveal('.emer-right', {
-  duration:1500
+  duration: 1500
 })
 
 sr.reveal('.card-flex', {
@@ -77,13 +106,13 @@ sr.reveal('.card-flex', {
 })
 
 sr.reveal('.coment', {
-  origin:"top",
+  origin: "top",
   distance: "100px",
   interval: 200
 })
 
 sr.reveal('.last-item', {
-  origin:"top",
+  origin: "top",
   distance: "100px",
   interval: 200
 })
@@ -118,8 +147,10 @@ const swiper = new Swiper(".mySwiper", {
 
 const navLink = document.querySelectorAll('.nav-link');
 
-function deleteNavLink(){
+function deleteNavLink() {
   mobil_list.classList.remove("active");
 }
 
-navLink.forEach((n) => n.addEventListener("click",  deleteNavLink));
+navLink.forEach((n) => n.addEventListener("click", deleteNavLink));
+
+
