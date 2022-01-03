@@ -38,7 +38,6 @@ const sualContent = document.querySelectorAll('.sual-content')
 for (let i = 0; i < sualItem.length; i++) {
   sualItem[i].addEventListener('click', () => {
     sualContent[i].classList.toggle('active');
-    sIcon[i].classList.toggle('bx-x')
     sualItem[i].classList.toggle('active')
   })
 }
@@ -67,9 +66,6 @@ open_bar.addEventListener('click', () => {
   mobil_list.classList.toggle('active');
   Body.classList.toggle('active');
 });
-
-
-
 
 const navLink = document.querySelectorAll('.nav-link');
 
