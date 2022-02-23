@@ -1,6 +1,6 @@
 window.state = {
   downloadLinks: {
-    android: "./android",
+    android: "https://play.google.com/store/apps/details?id=com.reminant.mobile",
     ios: "./ios"
   },
   sosicalLinks:{
